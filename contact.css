@@ -1,0 +1,92 @@
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgreen;
+}
+nav img{
+    width: 150px;
+    
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+.nav-links ul li a{
+    color: aliceblue;
+    
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0%;
+    height: 2PX;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+    
+}
+
+
+nav .fa{
+    display: none;
+}
+section{
+    margin: 20px;
+}
+input{
+    outline: none;
+    padding: 6px 20px;
+    
+}
+.input{
+    margin-bottom: 20px;
+}
+input[type="submi"]{
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #48c;
+    color: #fff;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover{
+    background-color: #6ad;
+    
+}
+#erreur{
+    background-color: #c00;
+    color: rgb(245, 23, 23);
+    padding: 10px;
+}
+.a{
+    width: 350px;
+    height: 300px;
+}
+.hotel{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.sejour{
+    text-align: center;
+}

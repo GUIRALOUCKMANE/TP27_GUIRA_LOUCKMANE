@@ -1,0 +1,123 @@
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgreen;
+}
+nav img{
+    width: 150px;
+    
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    }
+.nav-links ul li a{
+    color: aliceblue;
+    
+    
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0%;
+    height: 2PX;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+    
+}
+
+
+nav .fa{
+    display: none;
+}
+.tes{
+    text-align: center;
+}
+.b{
+    width: 300px;
+    height: 300px;
+    justify-content: space-around;
+}
+.rep{
+    display: flex;
+    justify-content: space-around;
+}
+/*Destination css*/
+.destination{
+    padding: 0 10%;
+margin-bottom: 50px;
+}
+.destination .content{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.destination .content .box{
+overflow: hidden;
+position: relative;
+height: 250px;
+transition: 0.5s;
+
+}
+.destination .content .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%); 
+    transition: 0.5s;
+}
+.box .content h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+.box .content p{
+    padding: 2px;
+    font-size: 12px;
+    color: #222;
+
+}
+.box .content1 p:nth-child(3){
+    margin-bottom: 25px;
+
+}
+.box .content a{
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #29d9d5;
+    color: #29d9d5;
+    font-weight: bold;
+}
+.box:hover{
+    box-shadow: 0 0 10px #29d9d5;
+}
+.box:hover .content{
+    transform: translateX(0);
+}
